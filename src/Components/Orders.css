@@ -1,0 +1,84 @@
+header {
+    font-size: 30px;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    background-color: #ffb300;
+    padding: 1rem;
+}
+
+.container {
+    background-color: #000a43;
+    padding: 1rem;
+    width: auto;
+   height: auto;
+    
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.703);
+
+}
+
+.container label{
+    color: #ccc;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    margin-right: .5rem;
+    margin-left: 2rem;
+
+}
+.container button{
+    font: inherit;
+  cursor: pointer;
+  padding: .5rem;
+  border: 1px solid #14cd00;
+  background-color: #00b728;
+  color: white;
+  border-radius: 12px;
+  margin-top: 1rem;
+  margin-left: 1rem;
+    margin-bottom: 0.2rem;
+
+  
+}
+.container input {
+    font: inherit;
+    padding: 0.1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 10rem;
+    max-width: 100%;
+}
+.container select {
+    font: inherit;
+    padding: 0.1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 10rem;
+    max-width: 100%;
+}
+
+.productsContainer{
+    background-color: #ffd900;
+    padding: 1rem;
+   color: rgb(0, 0, 0);
+    width: auto;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.703);
+  
+}
+
+.productsContainer button{
+      
+    font: inherit;
+  cursor: pointer;
+  padding: .3rem;
+  border: 1px solid #000a43;
+  background-color: #000a43;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+
+  margin-top: .2rem;
+  
+}
+

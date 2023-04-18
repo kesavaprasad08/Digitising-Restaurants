@@ -1,24 +1,20 @@
-import React from 'react';
-import AddProduct from './Components/AddProduct';
-import ProductList from './Components/ProductList';
+import React from "react";
+import './App.css';
 
+import Orders from "./Components/Orders";
 
 function App() {
+  let orders = [];
+  let keys = Object.keys(localStorage);
 
-  const addProductHandler =(proId,proPrice,proName,proCategory) => {
-    const productaxx = {expenseamount:proPrice,description:proName,category:proCategory}
-    const productfinal = JSON.stringify(productaxx);
-    localStorage.setItem( proId,productfinal);
-    const getIye = localStorage.getItem(123);
-    console.log(getIye)
-  
+  for (let i = 0; i < keys.length; i++) {
+    const newValue = JSON.parse(localStorage.getItem(keys[i]));
+    orders = [...orders, newValue];
   }
 
   return (
-    <div>
-<AddProduct onAddProduct ={addProductHandler} />
-<ProductList />
-
+    <div className='app'>
+      <Orders orders={orders} />
     </div>
   );
 }
