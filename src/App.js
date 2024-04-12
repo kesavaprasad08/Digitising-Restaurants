@@ -1,5 +1,5 @@
 import React from "react";
-import './App.css';
+import "./App.css";
 
 import Orders from "./Components/Orders";
 
@@ -13,7 +13,7 @@ function App() {
   }
 
   return (
-    <div className='app'>
+    <div className="app">
       <Orders orders={orders} />
     </div>
   );
